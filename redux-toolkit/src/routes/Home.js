@@ -5,8 +5,10 @@ import {add} from "../store"
 import ToDo from '../components/ToDo'
 
 
+
 function Home({ toDos, addToDo}) {
   const [text, setText] = useState("");
+
 
 
   function onChange(e) {
@@ -37,6 +39,7 @@ function Home({ toDos, addToDo}) {
     </>
   );
 }
+
 
 
 function mapStateToProps(state) {

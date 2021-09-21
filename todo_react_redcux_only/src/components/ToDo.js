@@ -1,10 +1,17 @@
 import React from 'react'
 import { actionCreatores } from '../store';
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
+// onBtnClick, 
+function ToDo({text,onBtnClick, id}) {
 
-function ToDo({text, onBtnClick, id}) {
+// const dispatch = useDispatch();
+
+// const onBtnClick = () => {
+//     dispatch(actionCreatores.deleteToDo(id))
+// }
+
     return (
         <li>
             <Link to={`/${id}`}>
@@ -13,6 +20,9 @@ function ToDo({text, onBtnClick, id}) {
         </li>
     )
 }
+
+// export default ToDo;
+
 
 
 //삭제 처리를 위해 dispatch 전달 
